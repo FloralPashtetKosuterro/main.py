@@ -1,9 +1,10 @@
 
 chislo = int(input("Введите число больше нуля: "))
 stroka = input("Введите слово, которое заменит чётное число: ")
-spisok = list(range(1, chislo + 1))
+spisok = list(range(1, chislo + 1))#функция list создаёт пустой список для последующих операций,
+# задаём единицу как точку начала и прибавляем единицу к изначальному числу
 
-for g in range(len(spisok)):
+for g in range(len(spisok)):#Здесь мы через цикл перебираем элементы списка и под условием получаем информацию о чётных
     if spisok[g] % 2 == 0:
         spisok[g] = stroka
-print(spisok)
+print(spisok)#Вывод
